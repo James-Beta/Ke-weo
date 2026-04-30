@@ -6,7 +6,7 @@ font = load_google_font("Funnel Sans")
 font_bold = load_google_font("Funnel Sans", weight=800)
 set_default_font(font)
 pd.options.display.float_format = '{:.4f}'.format
-df = pd.read_csv("C:/Users/HP/Documents/Updatedskills/ke_weo_imf.csv", index_col="INDICATOR")
+df = pd.read_csv("data\ke_weo_imf.csv", index_col="INDICATOR")
 df['SCALE.ID'] = pd.to_numeric(df['SCALE.ID'], errors='coerce')
 multiplier = 10 ** df['SCALE.ID']
 df[['2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025','2026']] = df[['2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025','2026']].mul(multiplier, axis=0)
