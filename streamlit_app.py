@@ -1,6 +1,13 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
+
+st.set_page_config(
+    page_title="Stock peer analysis dashboard",
+    page_icon=":chart_with_upwards_trend:",
+    layout="wide",
+)
+
 from pyfonts import load_google_font, set_default_font
 font = load_google_font("Funnel Sans")
 font_bold = load_google_font("Funnel Sans", weight=800)
