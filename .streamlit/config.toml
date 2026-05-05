@@ -6,8 +6,3 @@ textColor = "#e2e8f0"
 primaryColor = "#615fff"
 backgroundColor = "#1d293d"
 secondaryBackgroundColor = "#0f172b"
-
-# Base text
-font = "'Space Grotesk':https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
-baseFontWeight = 300
-baseFontSize = 14
