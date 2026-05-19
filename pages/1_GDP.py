@@ -8,10 +8,12 @@ st.set_page_config(
 
 df = pd.read_csv("data/Processed/gdp.csv")
 df['Year'] = df['Year'].astype(str)
-st.line_chart(df,
+col1, col2 = st.columns([4, 1])
+col1.line_chart(df,
                x = 'Year', 
                y = 'GDP (Trillions KES)', 
                color="#00eeff",
                x_label= "YEAR",
                y_label= "GDP in trillions of Ksh",
-               height='stretch')
+               height='content')
+col2.dataframe(df, hide_index=True)
